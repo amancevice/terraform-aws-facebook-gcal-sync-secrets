@@ -17,6 +17,12 @@ variable facebook_secret_name {
   description = "facebook SecretsManager secret name."
 }
 
+variable facebook_secret_tags {
+  description = "facebook SecretsManager secret tags."
+  default     = {}
+  type        = "map"
+}
+
 variable google_credentials_file {
   description = "Path to Google Service Account credentials file."
 }
@@ -28,4 +34,10 @@ variable google_secret_description {
 
 variable google_secret_name {
   description = "Google service account SecretsManager secret name."
+}
+
+variable google_secret_tags {
+  description = "Google service account SecretsManager secret tags."
+  default     = {}
+  type        = "map"
 }

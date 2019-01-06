@@ -6,12 +6,14 @@ resource aws_secretsmanager_secret facebook {
   description = "${var.facebook_secret_description}"
   name        = "${var.facebook_secret_name}"
   kms_key_id  = "${data.aws_kms_key.key.id}"
+  tags        = "${var.facebook_secret_tags}"
 }
 
 resource aws_secretsmanager_secret google {
   description = "${var.google_secret_description}"
   name        = "${var.google_secret_name}"
   kms_key_id  = "${data.aws_kms_key.key.id}"
+  tags        = "${var.google_secret_tags}"
 }
 
 resource aws_secretsmanager_secret_version facebook {
