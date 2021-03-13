@@ -1,3 +1,5 @@
+> WARNING — THIS MODULE IS DEPRECATED
+
 # Facebook to Google Calendar Sync Secrets
 
 Store secrets to access facebook Graph API and Google Calendar API in AWS SecretsManager.
